@@ -90,7 +90,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -156,7 +156,9 @@ footer {
     height: 30px;
 }
 
-@media screen and (max-width: 968px){    
+
+
+@media screen and (max-width: 992px){    
     .navbar a{
         display: inline-block;
         width: 50%;         
@@ -192,11 +194,10 @@ footer {
     }  
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 768px){
     .navbar a {
         display: inline-block;
-        width: 100%;
-                   
+        width: 100%;                   
     }
      .dropbtn {
         display: inline-block; 
@@ -223,5 +224,3 @@ footer {
     }
 }
         
-
-
