@@ -1,4 +1,5 @@
 * { box-sizing: border-box;}
+* { margin: 0; padding: 0; }
 body {font-family: Arial, Helvetica, sans-serif;}
 
 .navbar {
@@ -27,34 +28,37 @@ body {font-family: Arial, Helvetica, sans-serif;}
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
+  margin: 0;  
 }
 
-.derecha {
-  float: right;
+.derecha {    
+ float: right;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: green;
 }
-
 .dropdown-content {
   display: none;
-  position: absolute; 
+  position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  min-width: 130px;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;   
+  text-align: center;  
+  overflow: hidden;
 }
 
-.dropdown-content a {
-  float: none;
+.dropdown-content a {  
+  float:none;
   color: black;
   padding: 12px 14px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
+
+
 
 .dropdown-content a:hover {
   background-color: #ddd;
@@ -161,8 +165,7 @@ footer {
         display: inline-block; 
         width: 100%;
     } 
-    .dropdown {
-        display: inline-block;
+    .dropdown {        
         width: 50%;
     }
     .dropdown-content {           
@@ -171,7 +174,7 @@ footer {
     .dropdown-content a {
         width: auto;
         display: block;
-        text-align: center;        
+        text-align: left;        
     }
     
     div.dropdown {
@@ -190,17 +193,28 @@ footer {
 }
 
 @media screen and (max-width: 992px){
-    .navbar a, .dropbtn, .dropdown {
+    .navbar a {
         display: inline-block;
         width: 100%;
                    
     }
-    .dropdown-content {        
-        width: 100%;            
+     .dropbtn {
+        display: inline-block; 
+        width: 100%;
+    } 
+    .dropdown {
+        float: none;        
+        width: 100%;
+    }
+    .dropdown-content {           
+        width: 100%;        
     }
     .dropdown-content a {
-        text-align: center;
+        width: auto;
+        display: block;
+        text-align: left;        
     }
+        
     #fila1 .col, #fila2 .col {       
         width: 100%;        
     }
