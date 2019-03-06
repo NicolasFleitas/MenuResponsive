@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!--Menu basico -->
+        <div class="navbar" id="menusuperior">
+            <a href="#">Inicio</a>
+            <a href="#">Clientes</a>
+            <a href="#">Productos</a>
+            <a href="#">Proveedores</a>
+            <a href="#">Servicios</a>
+
+            <div class="dropdown derecha">
+                <button class="dropbtn">Desplegable 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"  onclick="openNav();">&#9776; Menu Lateral</a>
+                    <a href="#" onclick="abrirMenuExt();">Mas opciones</a>
+                    <a href="#">Salir</a>
+                </div>
+
+            </div> 
+        </div>
+        <!-- Menu Extendido -->
+
+        <div class="navbar" id="menusuperiorext">
+            <a href="#">Opc 1</a>
+            <a href="#">Opc 2</a>
+            <a href="#">Opc 3</a>
+            <a style="float: right;" href="#" onclick="ocultarMenuExt();">Ocultar</a>
+        </div>        
+        <!--Opcional si se desea un boton a la izquierda para activar el menu lateral -->
+        <!--<span id="btnmenulateral" style="font-size:16px;cursor:pointer;" onclick="openNav()">&#9776;Mas</span> -->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Menu Lateral I</a>
+            <a href="#">Menu Lateral II</a>
+            <a href="#">Menu Lateral III</a>
+            <a href="#">Menu Lateral IV</a>
+        </div>
+        <!-- Contenido -->
+        <div class="row" id="fila1">
+            <div class="col">
+                <h1>Columna 1x1</h1>
+            </div>
+
+            <div class="col">
+                <h1>Columna 1x2</h1>
+            </div>
+        </div>
+
+        <div class="row" id="fila2">
+            <div class="col rojo">
+                <h2>2x1</h2>
+            </div>
+
+            <div class="col verde">
+                <h2>2x2</h2>
+            </div>
+
+            <div class="col azul">
+                <h2>2x3</h2>
+            </div>
+
+            <div class="col rojo">
+                <h2>2x4</h2>
+            </div>
+        </div>
+
+        <footer>Nicolas Fleitas</footer>
+        <script src="js/menujs.js" type="text/javascript"></script>
+    </body>
+</html>
+
+
