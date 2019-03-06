@@ -146,13 +146,13 @@ footer {
     background: #111;
     color: white;
     width: 100%;
-    text-align: right;
+    text-align: center;
     bottom: 0px;
     position: fixed;    
     height: 30px;
 }
 
-@media screen and (max-width: 768px){    
+@media screen and (max-width: 968px){    
     .navbar a{
         display: inline-block;
         width: 50%;         
@@ -184,11 +184,12 @@ footer {
         padding: 20px;
         text-align: center;
     }
-
-    
+    #botonMenuLateral {
+        display: none;
+    }  
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 992px){
     .navbar a, .dropbtn, .dropdown {
         display: inline-block;
         width: 100%;
@@ -200,5 +201,13 @@ footer {
     .dropdown-content a {
         text-align: center;
     }
+    #fila1 .col, #fila2 .col {       
+        width: 100%;        
+    }
+    h1 { font-size: 20px; 
+         text-align: center;
+    }
 }
+        
+
 

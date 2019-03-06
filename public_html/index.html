@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Menu </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="img/favicon">
@@ -10,19 +11,20 @@
     <body>
         <!--Menu basico -->
         <div class="navbar" id="menusuperior">
+            <a id="botonMenuLateral" href="#"  onclick="openNav();">&#9776;Lateral</a>
             <a href="#">Inicio</a>
             <a href="#">Clientes</a>
             <a href="#">Productos</a>
             <a href="#">Proveedores</a>
             <a href="#">Servicios</a>
-
+            
             <div class="dropdown derecha">
-                <button class="dropbtn">Desplegable 
+                <button class="dropbtn">+Menús
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="#"  onclick="openNav();">&#9776; Menu Lateral</a>
-                    <a href="#" onclick="abrirMenuExt();">Mas opciones</a>
+                    <a href="#" onclick="abrirMenuExt();">+Mas opciones</a>
                     <a href="#">Salir</a>
                 </div>
 
