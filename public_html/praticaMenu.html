@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Pagina Web Layout</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mi sitio</title>
 <style>
 * { box-sizing: border-box; }
 
@@ -61,19 +63,82 @@ body {
   background:  #ee9b26;
   margin-top: 20px;
 }
+ .derecha {float: right; }
+ .izquierda{float: left; }
+ 
+.dropdown {
+  overflow: hidden;
+}
 
-@media screen and (max-width: 800px) {
+.dropdown .dropbtn {
+    font-size: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;   
+    text-align: center;  
+    overflow: hidden;
+}
+
+.dropdown-content a {  
+    float:none;
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 900px) {
   .col-izquierda, .col-derecha {   
     width: 100%;
     padding: 0;
   }
+ 
 }
 
-@media screen and (max-width: 500px) {
-  .topnav a {
+@media screen and (max-width: 600px) {
+    .header h1 {
+        font-size: 25px;
+    }
+  .topnav a, .dropdown {
     float: none;
     width: 100%;
   }
+  
+  .dropdown-content {
+      position: relative;
+      width: 100%;
+  }
+  .dropbtn {
+      display: block;
+      width: 100%;
+  }
+  
 }
 </style>
 </head>
@@ -88,12 +153,22 @@ body {
   <a href="#">Inicio</a>
   <a href="#">Servicios</a>
   <a href="#">Productos</a>  
-  <a href="#">Contacto</a>
+ 
+  <div class="dropdown izquierda">
+      <button class="dropbtn">Desplegable
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="#">Opcion 1</a>
+          <a href="#">Opcion 2</a>
+          <a href="#">Opcion 3</a>
+      </div>
+  </div> 
   <a href="#" style="float:right">Salir</a>
 </div>
 
 <div class="row">
-  <div class="col-izquierda">
+    <div class="col-izquierda">
     <div class="card">
       <h2>Nuestros Clientes</h2>
       <h5>Noticias del mes de marzo 2019 </h5>
@@ -123,7 +198,9 @@ body {
     </div>
     <div class="card">
       <h3>Sigueme</h3>
-      <p><i>Twitter</i> @nicofleitaspy</p>
+      <p><i class="fa fa-twitter"></i> nicolasfleitas</p>
+      <p><i class="fa fa-facebook"></i> nicolasfleitas</p>
+      <p><i class="fa fa-instagram"></i> nicolasfleitas</p>
     </div>
   </div>    
 </div>
