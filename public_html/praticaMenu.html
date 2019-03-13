@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pagina Web Layout</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.header {
+  background-color: #ee9b26;   
+  padding: 30px;
+  text-align: center;
+  
+}
+.header h1 { font-size: 50px; }
+.topnav { overflow: hidden; background-color: #333; }
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.col-izquierda { float: left; width: 75%; }
+.col-derecha {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+/*LImpiar los floats despues de las columnas*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {  
+  padding: 15px;
+  text-align: center;
+  background:  #ee9b26;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .col-izquierda, .col-derecha {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Empresa</h1>
+  <p><em>Lema de la empresa</em></p>
+</div>
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#">Servicios</a>
+  <a href="#">Productos</a>  
+  <a href="#">Contacto</a>
+  <a href="#" style="float:right">Salir</a>
+</div>
+
+<div class="row">
+  <div class="col-izquierda">
+    <div class="card">
+      <h2>Nuestros Clientes</h2>
+      <h5>Noticias del mes de marzo 2019 </h5>
+      <div class="fakeimg" style="height:200px;">Imagen falsa</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Titulo</h2>
+      <h5>Descripcion de otro título, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="col-derecha">
+    <div class="card">
+      <h2>Acerca de</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Texto de ejemplo about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Productos Desctacados</h3>
+      <div class="fakeimg"><p>Producto1</p></div>
+      <div class="fakeimg"><p>Producto2</p></div>
+      <div class="fakeimg"><p>Producto3</p></div>
+    </div>
+    <div class="card">
+      <h3>Sigueme</h3>
+      <p><i>Twitter</i> @nicofleitaspy</p>
+    </div>
+  </div>    
+</div>
+
+<div class="footer">
+  <h3>Nicolas Fleitas</h3>
+</div>
+
+</body>
+</html>
